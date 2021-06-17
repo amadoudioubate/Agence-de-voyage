@@ -334,3 +334,13 @@ figcaption {
     padding-left: 20px;
     padding-top: 25px;
 }
+/*---------------------------------------*/
+/*==     PIED DE PAGE(FOOTER)            */
+/*---------------------------------------*/
+#pied_de_page{
+    padding: 20px;
+    background-color: #F2F2F2;
+}
+.contenu_pied_de_page{
+    margin-bottom: 40px;
+}
