@@ -512,4 +512,59 @@ figcaption {
         margin-right: 25px;
         margin-top: 50px;
     }
+
+    /*---------------------------------------------------*/
+    /*==             SECTION HEBERGEMENTS                */
+    /*---------------------------------------------------*/
+    #hebergements{
+        flex-direction: row;
+    }
+    #populaire,#hotel_trouve{
+        border-radius: 20px;
+    }
+    #hotel_trouve{
+        margin-right: 20px;
+        background-color: #F2F2F2;
+    }
+
+    .contenu_toutes_les_chambres {
+        /*display: flex;*/
+        flex-wrap: wrap;
+        /*justify-content: space-between;*/
+    }
+    .chambres {
+        flex-basis: 32.5%;
+        background-color: #fff;
+        height: 230px;
+    }
+    #hotel_trouve h2,.titre_populaire h2,.icone_ligne_de_caractere i,
+    .affiche_plus_de_chambres{
+        font-size: 1.3rem;
+    }
+    .chambres h3,.informations_chambres_populaires h3{
+    font-size: 1rem;
+    }
+    .chambres p,.chambres .etoiles,.informations_chambres_populaires p
+    ,.informations_chambres_populaires .etoiles{
+    font-size: 0.9rem;
+    }
+
+    .chambres_populaires {
+        width: 340px;
+        height: 180px;
+    }
+    .images_chambres_populaires img {
+        height: 160px;
+        width: 140px;
+    }
+    .informations_chambres_populaires {
+        height: 150px;
+    }
+
+    .images_chambres img {
+        height: 100px;
+    }
+    .chambres h3, .chambres p {
+        margin-top: 5px;
+    }
 }
