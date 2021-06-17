@@ -567,4 +567,30 @@ figcaption {
     .chambres h3, .chambres p {
         margin-top: 5px;
     }
+    /*-----------------------------------------------*/
+    /*==               SECTION ACTIVITES             */
+    /*-----------------------------------------------*/
+    /*.bloc_activites {
+        display: flex;
+        justify-content: space-between;
+    }*/
+    .figure_longue,.images_activites{
+        flex-basis: 24%;
+    }
+    .figure_longue{
+        height: 470px;
+    }
+    .figure_longue img{
+        height: 390px;
+    }
+    .figure_courte {
+        height: 220px;
+    }
+    .figure_courte img{
+        height: 140px;
+    }
+    
+    .bloc_activites figcaption {
+        font-size: 1rem;
+    }
 }
