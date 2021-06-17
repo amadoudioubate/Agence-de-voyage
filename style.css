@@ -593,4 +593,12 @@ figcaption {
     .bloc_activites figcaption {
         font-size: 1rem;
     }
+    /*---------------------------------------*/
+    /*==      PIED DE PAGE (FOOTER)          */
+    /*---------------------------------------*/   
+    #pied_de_page {
+        /*display: flex;
+        justify-content: space-between;*/
+        padding: 0 80px;
+    }
 }
