@@ -474,4 +474,42 @@ figcaption {
         position: static;
         flex-basis: 10%;
     }
+    /*---------------------------------------*/
+    /*== SECTION TROUVER VOTRE HEBERGEMENT   */
+    /*---------------------------------------*/
+    .formulaire_recherche{
+        width: 480px;
+    }
+    .icone_recherche{
+        display: none;
+    }
+    .bouton_recherche,.choix_filtres a{
+        font-size: 1rem;
+    }
+    .bouton_recherche,.titre_filtre{
+        height: 50px;
+    }
+    .bouton_recherche {
+        display: block;
+        width: 130px;
+        border-radius: 0px 10px 10px 0px;
+        background-color: #0065FC;
+        color: #fff;
+        border: 0;
+    }
+    /*.filtres {
+        display: flex;
+    }*/
+    .menu_filtrage {
+        width: 100%;
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+    .titre_filtre,.champ_texte{
+        font-size: 1.3rem;
+    }
+    .titre_filtre {
+        margin-right: 25px;
+        margin-top: 50px;
+    }
 }
