@@ -353,9 +353,7 @@ figcaption {
     /*---------------------------------------*/
     /*==      EN TETE  (HEADER)              */
     /*---------------------------------------*/
-    /*#en_tete{
-        height: 80px;
-    }*/
+    
     #en_tete {
         display: flex;
         justify-content: space-between;
@@ -388,5 +386,13 @@ figcaption {
     .inscription {
         position: static;
         flex-basis: 15%;
+    }
+
+    /*---------------------------------------------------*/
+    /*==          SECTION TROUVER HEBERGEMENT            */
+    /*---------------------------------------------------*/
+
+    .formulaire_recherche{
+        width: 450px;
     }
 }
