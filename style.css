@@ -31,3 +31,89 @@
 /*---------------------------------------*/
 /*==         ELEMENTS PRINCIPAUX         */
 /*---------------------------------------*/
+* {
+    box-sizing: border-box;
+    /* outline-color: #F2F2F2; */
+}
+body,figure,ul,h1{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Raleway',sans-serif;
+    /*min-width: 320px;*/
+    letter-spacing: .03rem;
+}
+figure,img{
+    width: 100%;
+    height: auto;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.gras{
+    font-weight: bold;
+}
+.couleur_etoile_bleu {
+    color: #0065FC;
+}
+.couleur_etoile_gris {
+    color: #F2F2F2;
+}
+#trouver_hebergement,#hotel_trouve,#populaire,#activites,#pied_de_page {
+    padding: 20px;
+}
+/*---------------------------------------*/
+/*==       EN TETE (HEADER)              */
+/*---------------------------------------*/
+#en_tete {
+    height: 140px;
+    position: relative;
+}
+.logo img{
+    height: 60px;
+}
+.logo {
+    width: 30%;
+}
+#navigation,.inscription{
+    text-align: center;
+}
+#navigation {
+    width: 100%;
+}
+.liste_navigation,.liste_navigation li{
+    height: 80px;
+}
+.liste_navigation {
+    display: flex;
+    align-items: center;
+}
+.liste_navigation li,.inscription{
+    display: block;
+}
+.liste_navigation li {
+    width: 50%;
+    padding-top: 30px;  
+}
+.bordure_trait_bleu{
+    border-bottom: 4px #0065FC solid;
+}
+.bordure_trait_gris{
+    border-bottom: 4px #F2F2F2 solid;
+}
+.inscription {
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    width: 25%;
+}
+.inscription a,.bordure_trait_bleu a{
+    color: #0065FC;
+}
