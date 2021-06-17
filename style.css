@@ -395,4 +395,21 @@ figcaption {
     .formulaire_recherche{
         width: 450px;
     }
+    /*---------------------------------------------------*/
+    /*==          SECTION HEBERGEMENTS ET ACTIVITES      */
+    /*---------------------------------------------------*/
+   .contenu_populaire,.contenu_toutes_les_chambres,.bloc_activites {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .chambres_populaires,.chambres,.figure_longue,.images_activites {
+        width: 49%;
+    }
+    .figure_longue {
+        height: 570px;
+    }
+    .figure_longue img{
+        height: 490px;
+    }
 }
