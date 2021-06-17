@@ -220,3 +220,93 @@ a {
     margin-right: 20px;
     font-size: 1rem;
 }
+/*---------------------------------------*/
+/*==          SECTION HEBERGEMENTS       */
+/*---------------------------------------*/
+/*hebergement --aside--*/
+#hebergements,.titre_populaire,.icone_ligne_de_caractere,.chambres_populaires,.etoiles{
+    display: flex;
+}
+#hebergements {
+    flex-direction: column-reverse;
+}
+#populaire {
+    background-color: #F2F2F2;
+}
+.titre_populaire {
+    justify-content: space-between;
+}
+.icone_ligne_de_caractere {
+    width: 50px;
+    font-size: 1.9rem;
+}
+.chambres,.chambres_populaires{
+    box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 
+                0px 10px 10px -5px rgba(0, 0, 0, 0.04);
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.chambres_populaires {
+    height: 230px;
+    width: 100%;  
+}
+.informations_chambres_populaires {
+    height: 185px;
+    padding: 15px;
+}
+
+.informations_chambres_populaires h3,.informations_chambres_populaires p {
+    margin-bottom: 0px;
+}
+.informations_chambres_populaires p{
+    margin-top: 10px;
+}
+.informations_chambres_populaires h3{
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+.informations_chambres_populaires p,.etoiles {
+    font-size: 1rem;
+}
+.informations_chambres_populaires .etoiles {
+    padding-top: 30px;
+}
+.images_chambres img,.images_chambres_populaires img{
+    object-fit: cover;
+}
+.images_chambres_populaires img {
+    height: 210px;
+    width: 180px;
+    border-radius: 15px 0 0 15px;
+}
+/*hebergements*/
+.chambres {
+    height: 270px;  
+}
+
+.images_chambres img{
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+}
+.chambres h3,.chambres p,.chambres .etoiles {
+    margin-left: 10px;
+}
+.chambres h3,.chambres p {
+    margin-top: 10px;
+}
+.chambres h3 {
+    margin-bottom: 0px;
+    font-size: 1.2rem;
+}
+.chambres p,.chambres .etoiles {
+    font-size: 1rem;
+}
+.chambres p {
+    margin-bottom: 10px;
+}
+.affiche_plus_de_chambres {
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
