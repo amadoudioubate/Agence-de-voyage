@@ -421,3 +421,57 @@ figcaption {
     }
     
 }
+
+/*-------------------------------------------------------------*/
+/*==                      STYLE DESKTOPS                       */
+/*-------------------------------------------------------------*/
+@media screen and (min-width:992px) and (max-width:1199px) {
+    /* code css factorisé de la partie DESKTOP*/
+    #en_tete,.filtres,.contenu_toutes_les_chambres,.bloc_activites,#pied_de_page{
+        display: flex;
+    }
+    #en_tete,.contenu_toutes_les_chambres,.bloc_activites,#pied_de_page{
+        justify-content: space-between;
+    }
+    main{
+        width: 90%;
+        margin: 0 auto;
+        /*max-width: 1459px;*/
+    }
+    /*---------------------------------------*/
+    /*==       EN TETE (HEADER)              */
+    /*---------------------------------------*/
+    #en_tete{
+        height: 80px;
+        margin-left: 50px;
+        margin-right: 65px;
+        font-size: 1rem;
+    }
+    
+    .logo {
+        flex-basis: 15%;
+        padding-top: 15px;
+        padding-left: 10px;
+    }
+    #navigation{
+        flex-basis: 75%;
+    }
+    .liste_navigation {
+        justify-content: flex-end;
+    }
+    .liste_navigation li,.inscription{
+        padding-top: 35px;
+    }
+    .liste_navigation li {
+        border-bottom: 0;
+        width: 22%;
+    }
+    .bordure_trait_bleu{
+        border-top: 2px #0065FC solid;
+    }
+    
+    .inscription {
+        position: static;
+        flex-basis: 10%;
+    }
+}
