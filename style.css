@@ -412,4 +412,12 @@ figcaption {
     .figure_longue img{
         height: 490px;
     }
+    /*---------------------------------------*/
+    /*==     PIED DE PAGE (FOOTER)           */
+    /*---------------------------------------*/   
+    #pied_de_page {
+        display: flex;
+        justify-content: space-between;
+    }
+    
 }
