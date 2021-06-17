@@ -344,3 +344,49 @@ figcaption {
 .contenu_pied_de_page{
     margin-bottom: 40px;
 }
+
+/*-------------------------------------------------------------*/
+/*==                      STYLE TABLETTES                      */
+/*-------------------------------------------------------------*/
+@media screen and (min-width:768px) and (max-width:991px) {
+
+    /*---------------------------------------*/
+    /*==      EN TETE  (HEADER)              */
+    /*---------------------------------------*/
+    /*#en_tete{
+        height: 80px;
+    }*/
+    #en_tete {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+    }
+    .logo {
+        flex-basis: 20%;
+    }
+    .logo img{
+        height: 70px;
+        padding-top: 20px
+    }
+    #navigation{
+        flex-basis: 65%;
+    }
+    .liste_navigation {
+        justify-content: flex-end;
+    }
+    .liste_navigation li,.inscription{
+        padding-top: 35px;
+    }
+    .liste_navigation li {
+        border-bottom: 0;
+        width: 35%;
+    }
+    .bordure_trait_bleu{
+        border-top: 2px #0065FC solid;
+    }
+    
+    .inscription {
+        position: static;
+        flex-basis: 15%;
+    }
+}
