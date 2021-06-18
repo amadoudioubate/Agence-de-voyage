@@ -33,7 +33,6 @@
 /*---------------------------------------*/
 * {
     box-sizing: border-box;
-    /* outline-color: #F2F2F2; */
 }
 body,figure,ul,h1{
     margin: 0;
@@ -55,26 +54,90 @@ li {
 }
 a {
     text-decoration: none;
-    color: #000;
 }
 .gras{
     font-weight: bold;
 }
-.couleur_etoile_bleu {
-    color: #0065FC;
-}
 .couleur_etoile_gris {
     color: #F2F2F2;
 }
+/*-------------------------------------------------------------------------*/
+/*==   La factorisation du code css concernant l'ensemble des sections     */
+/*-------------------------------------------------------------------------*/
 #trouver_hebergement,#hotel_trouve,#populaire,#activites,#pied_de_page {
     padding: 20px;
 }
+.inscription a,.bordure_trait_bleu a,.couleur_etoile_bleu {
+    color: #0065FC;
+}
+.liste_navigation,.formulaire_recherche,.ville_recherche,.icone_recherche,
+.icone_localisation,.menu_filtrage,.choix_filtres,.icone_awesome,
+.logement_disponible,.icone_information,.choix_filtres a,#hebergements,.titre_populaire,
+.icone_ligne_de_caractere,.chambres_populaires,.etoiles {
+    display: flex;
+}
+.icone_awesome,.icone_information,.icone_ligne_de_caractere,
+.icone_recherche,.icone_localisation {
+    justify-content: center;
+}
+.icone_awesome,.icone_information,.icone_ligne_de_caractere,
+.icone_recherche,.icone_localisation,.liste_navigation,.choix_filtres a {
+    align-items: center;
+}
+.ville_recherche,.chambres_populaires {
+    width: 100%;
+}
+.formulaire_recherche,.ville_recherche,.icone_recherche,
+.icone_localisation,.champ_texte,.choix_filtres,.icone_awesome,.choix_filtres a{
+    height: 50px;
+}
+#navigation,.inscription{
+    text-align: center;
+}
+#en_tete,.choix_filtres{
+    position: relative;
+}
+.inscription,.icone_awesome{
+    position: absolute;
+}
+.icone_information,a{
+    color:#000;
+}
+.titre_populaire,.menu_filtrage {
+    justify-content: space-between;
+}
+#activites h2,.informations_chambres_populaires h3{
+    margin-top: 0;
+}
+#populaire,#pied_de_page {
+    background-color: #F2F2F2;
+}
+.choix_filtres,.icone_information,.chambres,.chambres_populaires,figure{
+    background-color: #FFF;
+}
+.chambres,.chambres_populaires,figure{
+    margin-bottom: 20px;
+}
+.chambres,.chambres_populaires,figure{
+    box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 
+                0px 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-radius: 20px;
+}
+.images_chambres img,.images_chambres_populaires img,figure img{
+    object-fit: cover;
+}
+.champ_texte,figcaption {
+    padding-left: 20px;
+}
+.chambres h3,.informations_chambres_populaires h3,figcaption {
+    font-size: 1.2rem;
+}
+
 /*---------------------------------------*/
 /*==       EN TETE (HEADER)              */
 /*---------------------------------------*/
 #en_tete {
     height: 140px;
-    position: relative;
 }
 .logo img{
     height: 60px;
@@ -82,18 +145,12 @@ a {
 .logo {
     width: 30%;
 }
-#navigation,.inscription{
-    text-align: center;
-}
 #navigation {
     width: 100%;
 }
+
 .liste_navigation,.liste_navigation li{
     height: 80px;
-}
-.liste_navigation {
-    display: flex;
-    align-items: center;
 }
 .liste_navigation li,.inscription{
     display: block;
@@ -109,14 +166,11 @@ a {
     border-bottom: 4px #F2F2F2 solid;
 }
 .inscription {
-    position: absolute;
     top: 20px;
     right: 5px;
     width: 25%;
 }
-.inscription a,.bordure_trait_bleu a{
-    color: #0065FC;
-}
+
 /*---------------------------------------*/
 /*== SECTION TROUVER VOTRE HEBERGEMENT   */
 /*---------------------------------------*/
@@ -128,32 +182,28 @@ a {
     margin-bottom: 24px;
     width: 70%;
 }
-.formulaire_recherche,.ville_recherche,.icone_recherche,.icone_localisation{
-    display: flex;
-    height: 50px;
-}
-.ville_recherche {
-    width: 100%;
+.formulaire_recherche {
+    width: 300px;
 }
 .champ_texte {
-    height: 50px;
-    flex-basis: 80%;
-    /*font-size: 1.3rem;*/
+    width: 200px;
+    font-size: 1.1rem;
     border: 0;
-    padding-left: 20px;
 }
-.icone_recherche,.icone_localisation,.icone_awesome{
+.icone_recherche,.icone_localisation,.icone_awesome,.icone_ligne_de_caractere {
     width: 50px;
 }
-.icone_recherche,.icone_localisation{
-    justify-content: center;
-    align-items: center;
+.icone_recherche,.icone_localisation,.choix_filtres,.icone_information {
     border: 2px #F2F2F2 solid;
+}
+.icone_awesome,.icone_information {
+    border-radius: 100%;
+}
+.icone_awesome,.icone_localisation {
+    background-color: #DEEBFF;
 }
 .icone_localisation {
     border-radius: 30px 0 0px 30px;
-    background-color: #DEEBFF;
-    color: #000;
 }
 .icone_recherche {
     border-radius: 10px;
@@ -163,42 +213,19 @@ a {
 .bouton_recherche {
     display: none;
 }
-/* filtrage */
+/************** La partie filtrage *************/
 .titre_filtre {
     margin-top: 40px;
     margin-bottom: 15px;
-    /*font-size: 1.3rem;*/
 }
-.menu_filtrage,.choix_filtres,.icone_awesome,.logement_disponible,.icone_information {
-    display: flex;
-}
-
 .menu_filtrage {
     flex-wrap: wrap;
-    justify-content: space-between;
-}
-.choix_filtres,.icone_awesome,.choix_filtres a{
-    height: 50px;
-}
-.choix_filtres,.icone_information{
-    border: 2px #F2F2F2 solid;
-    background-color: #FFF;
 }
 .choix_filtres {
     margin-bottom: 20px;
     border-radius: 25px;
-    position: relative;
-}
-.icone_awesome,.icone_information,.icone_ligne_de_caractere {
-    justify-content: center;
-    align-items: center;
-}
-.icone_awesome,.icone_information {
-    border-radius: 100%;
 }
 .icone_awesome {
-    background-color: #DEEBFF;
-    position: absolute;
     left: -2px;
     top: -2px;    
 }
@@ -208,8 +235,6 @@ a {
 .choix_filtres a {
     padding-left: 55px;
     padding-right: 20px;
-    display: flex;
-    align-items: center;
 }
 .logement_disponible{
     margin-top: 20px;
@@ -218,90 +243,63 @@ a {
     width: 40px;
     height: 40px;
     margin-right: 20px;
-    font-size: 1rem;
 }
 /*---------------------------------------*/
 /*==          SECTION HEBERGEMENTS       */
 /*---------------------------------------*/
-/*hebergement --aside--*/
-#hebergements,.titre_populaire,.icone_ligne_de_caractere,.chambres_populaires,.etoiles{
-    display: flex;
-}
+
 #hebergements {
     flex-direction: column-reverse;
 }
-#populaire {
-    background-color: #F2F2F2;
-}
-.titre_populaire {
-    justify-content: space-between;
-}
+/**** La partie section hebergements concernant les chambres populaires ****/
 .icone_ligne_de_caractere {
-    width: 50px;
     font-size: 1.9rem;
 }
 .chambres,.chambres_populaires{
-    box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 
-                0px 10px 10px -5px rgba(0, 0, 0, 0.04);
-    background-color: #fff;
-    border-radius: 20px;
     padding: 10px;
-    margin-bottom: 20px;
 }
 .chambres_populaires {
     height: 230px;
-    width: 100%;  
 }
 .informations_chambres_populaires {
     height: 185px;
     padding: 15px;
 }
-
 .informations_chambres_populaires h3,.informations_chambres_populaires p {
     margin-bottom: 0px;
 }
 .informations_chambres_populaires p{
     margin-top: 10px;
 }
-.informations_chambres_populaires h3{
-    font-size: 1.2rem;
-    margin-top: 0;
-}
-.informations_chambres_populaires p,.etoiles {
+.informations_chambres_populaires p,.chambres p,.etoiles,.icone_information {
     font-size: 1rem;
 }
 .informations_chambres_populaires .etoiles {
     padding-top: 30px;
 }
-.images_chambres img,.images_chambres_populaires img{
-    object-fit: cover;
-}
+
 .images_chambres_populaires img {
     height: 210px;
     width: 180px;
     border-radius: 15px 0 0 15px;
 }
-/*hebergements*/
+
+/**** La partie section hebergements concernant toutes les chambres ****/
 .chambres {
     height: 270px;  
-}
-
-.images_chambres img{
-    height: 150px;
-    border-radius: 20px 20px 0 0;
 }
 .chambres h3,.chambres p,.chambres .etoiles {
     margin-left: 10px;
 }
+.images_chambres img{
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+}
 .chambres h3,.chambres p {
     margin-top: 10px;
 }
-.chambres h3 {
+.chambres h3,figcaption {
     margin-bottom: 0px;
-    font-size: 1.2rem;
-}
-.chambres p,.chambres .etoiles {
-    font-size: 1rem;
 }
 .chambres p {
     margin-bottom: 10px;
@@ -313,34 +311,24 @@ a {
 /*---------------------------------------*/
 /*==          SECTION ACTIVITES          */
 /*---------------------------------------*/
-#activites h2{
-    margin-top: 0;
-}
+
 figure {
     margin-bottom: 30px;
     height: 270px;
-    border-radius: 20px;
-    box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 
-                0px 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 figure img {
     height: 190px;
     border-radius: 20px 20px 0 0;
-    object-fit: cover;
-    overflow: hidden;
+    
 }
 figcaption {
-    font-size: 1.2rem;
     padding-left: 20px;
     padding-top: 25px;
 }
 /*---------------------------------------*/
 /*==     PIED DE PAGE(FOOTER)            */
 /*---------------------------------------*/
-#pied_de_page{
-    padding: 20px;
-    background-color: #F2F2F2;
-}
+
 .contenu_pied_de_page{
     margin-bottom: 40px;
 }
@@ -497,9 +485,7 @@ figcaption {
         color: #fff;
         border: 0;
     }
-    /*.filtres {
-        display: flex;
-    }*/
+    
     .menu_filtrage {
         width: 100%;
         padding-top: 20px;
@@ -528,9 +514,7 @@ figcaption {
     }
 
     .contenu_toutes_les_chambres {
-        /*display: flex;*/
         flex-wrap: wrap;
-        /*justify-content: space-between;*/
     }
     .chambres {
         flex-basis: 32.5%;
@@ -570,10 +554,7 @@ figcaption {
     /*-----------------------------------------------*/
     /*==               SECTION ACTIVITES             */
     /*-----------------------------------------------*/
-    /*.bloc_activites {
-        display: flex;
-        justify-content: space-between;
-    }*/
+    
     .figure_longue,.images_activites{
         flex-basis: 24%;
     }
@@ -597,8 +578,6 @@ figcaption {
     /*==      PIED DE PAGE (FOOTER)          */
     /*---------------------------------------*/   
     #pied_de_page {
-        /*display: flex;
-        justify-content: space-between;*/
         padding: 0 80px;
     }
 }
