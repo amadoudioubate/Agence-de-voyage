@@ -402,25 +402,36 @@ figcaption {
     }
     .figure_longue img{
         height: 490px;
-    }
-    
+    }    
 }
 
 /*-------------------------------------------------------------*/
 /*==                      STYLE DESKTOPS                       */
 /*-------------------------------------------------------------*/
 @media screen and (min-width:992px) and (max-width:1199px) {
-    /* code css factorisé de la partie DESKTOP*/
+    
+    main{
+        width: 90%;
+        margin: 0 auto;
+        /*max-width: 1459px;*/
+    }
+    /*-------------------------------------------------------------------------*/
+    /*==   La factorisation du code css concernant l'ensemble des sections     */
+    /*                          la partie desktop                              */
+    /*-------------------------------------------------------------------------*/
     #en_tete,.filtres,.contenu_toutes_les_chambres,.bloc_activites,#pied_de_page{
         display: flex;
     }
     #en_tete,.contenu_toutes_les_chambres,.bloc_activites,#pied_de_page{
         justify-content: space-between;
     }
-    main{
-        width: 90%;
-        margin: 0 auto;
-        /*max-width: 1459px;*/
+    #hotel_trouve h2,.titre_populaire h2,.icone_ligne_de_caractere i,
+    .affiche_plus_de_chambres,.titre_filtre,.champ_texte{
+        font-size: 1.3rem;
+    }
+    #en_tete,.bouton_recherche,.choix_filtres a,.chambres h3,
+    .informations_chambres_populaires h3,.bloc_activites figcaption{
+        font-size: 1rem;
     }
     /*---------------------------------------*/
     /*==       EN TETE (HEADER)              */
@@ -429,7 +440,6 @@ figcaption {
         height: 80px;
         margin-left: 50px;
         margin-right: 65px;
-        font-size: 1rem;
     }
     
     .logo {
@@ -467,9 +477,6 @@ figcaption {
     .icone_recherche{
         display: none;
     }
-    .bouton_recherche,.choix_filtres a{
-        font-size: 1rem;
-    }
     .bouton_recherche,.titre_filtre{
         height: 50px;
     }
@@ -486,9 +493,6 @@ figcaption {
         width: 100%;
         padding-top: 20px;
         margin-top: 20px;
-    }
-    .titre_filtre,.champ_texte{
-        font-size: 1.3rem;
     }
     .titre_filtre {
         margin-right: 25px;
@@ -517,16 +521,9 @@ figcaption {
         background-color: #fff;
         height: 230px;
     }
-    #hotel_trouve h2,.titre_populaire h2,.icone_ligne_de_caractere i,
-    .affiche_plus_de_chambres{
-        font-size: 1.3rem;
-    }
-    .chambres h3,.informations_chambres_populaires h3{
-    font-size: 1rem;
-    }
     .chambres p,.chambres .etoiles,.informations_chambres_populaires p
     ,.informations_chambres_populaires .etoiles{
-    font-size: 0.9rem;
+        font-size: 0.9rem;
     }
 
     .chambres_populaires {
@@ -567,9 +564,6 @@ figcaption {
         height: 140px;
     }
     
-    .bloc_activites figcaption {
-        font-size: 1rem;
-    }
     /*---------------------------------------*/
     /*==      PIED DE PAGE (FOOTER)          */
     /*---------------------------------------*/   
