@@ -338,13 +338,19 @@ figcaption {
 /*-------------------------------------------------------------*/
 @media screen and (min-width:768px) and (max-width:991px) {
 
+    /*-------------------------------------------------------------------------*/
+    /*==   La factorisation du code css concernant l'ensemble des sections     */
+    /*                          la partie tablette                             */
+    /*-------------------------------------------------------------------------*/
+    #en_tete,.contenu_populaire,.contenu_toutes_les_chambres,.bloc_activites,#pied_de_page {
+        display: flex;
+        justify-content: space-between;
+    }
     /*---------------------------------------*/
     /*==      EN TETE  (HEADER)              */
     /*---------------------------------------*/
     
     #en_tete {
-        display: flex;
-        justify-content: space-between;
         height: 80px;
     }
     .logo {
@@ -370,7 +376,6 @@ figcaption {
     .bordure_trait_bleu{
         border-top: 2px #0065FC solid;
     }
-    
     .inscription {
         position: static;
         flex-basis: 15%;
@@ -387,9 +392,7 @@ figcaption {
     /*==          SECTION HEBERGEMENTS ET ACTIVITES      */
     /*---------------------------------------------------*/
    .contenu_populaire,.contenu_toutes_les_chambres,.bloc_activites {
-        display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
     }
     .chambres_populaires,.chambres,.figure_longue,.images_activites {
         width: 49%;
@@ -399,13 +402,6 @@ figcaption {
     }
     .figure_longue img{
         height: 490px;
-    }
-    /*---------------------------------------*/
-    /*==     PIED DE PAGE (FOOTER)           */
-    /*---------------------------------------*/   
-    #pied_de_page {
-        display: flex;
-        justify-content: space-between;
     }
     
 }
