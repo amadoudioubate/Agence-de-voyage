@@ -385,8 +385,11 @@ figcaption {
     /*==          SECTION TROUVER HEBERGEMENT            */
     /*---------------------------------------------------*/
 
-    .formulaire_recherche{
+    .formulaire_recherche {
         width: 450px;
+    }
+    .champ_texte{
+        width: 300px;
     }
     /*---------------------------------------------------*/
     /*==          SECTION HEBERGEMENTS ET ACTIVITES      */
@@ -471,7 +474,7 @@ figcaption {
     /*---------------------------------------*/
     /*== SECTION TROUVER VOTRE HEBERGEMENT   */
     /*---------------------------------------*/
-    .formulaire_recherche{
+    .formulaire_recherche,.champ_texte{
         width: 480px;
     }
     .icone_recherche{
