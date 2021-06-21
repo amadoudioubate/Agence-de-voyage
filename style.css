@@ -115,6 +115,9 @@ a {
 .choix_filtres,.icone_information,.chambres,.chambres_populaires,figure{
     background-color: #FFF;
 }
+.choix_filtres:hover,.icone_recherche{
+    background-color:#0065FC;
+}
 .chambres,.chambres_populaires,figure{
     margin-bottom: 20px;
 }
@@ -207,7 +210,7 @@ a {
 }
 .icone_recherche {
     border-radius: 10px;
-    background-color: #0065FC;
+    /*background-color: #0065FC;*/
     color: #fff;
 }
 .bouton_recherche {
