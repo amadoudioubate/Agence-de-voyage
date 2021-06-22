@@ -578,6 +578,9 @@ figcaption {
     }
 }
 
+/*-------------------------------------------------------------*/
+/*==                      STYLE DESKTOPS AU DELA DE 1200       */
+/*-------------------------------------------------------------*/
 @media screen and (min-width:1200px){
     body{
         background-color:#fff;
@@ -591,19 +594,54 @@ figcaption {
     /*==   La factorisation du code css concernant l'ensemble des sections     */
     /*                          la partie desktop                              */
     /*-------------------------------------------------------------------------*/
-    .filtres,.contenu_toutes_les_chambres,.bloc_activites,#pied_de_page{
+    #en_tete,.filtres,.contenu_toutes_les_chambres,.bloc_activites,#pied_de_page{
         display: flex;
     }
-    .contenu_toutes_les_chambres,.bloc_activites,#pied_de_page{
+    #en_tete,.contenu_toutes_les_chambres,.bloc_activites,#pied_de_page{
         justify-content: space-between;
     }
     #hotel_trouve h2,.titre_populaire h2,.icone_ligne_de_caractere i,
     .affiche_plus_de_chambres,.titre_filtre,.champ_texte{
         font-size: 1.3rem;
     }
-    .bouton_recherche,.choix_filtres a,.chambres h3,
-    .informations_chambres_populaires h3,.bloc_activites figcaption{
+    .bouton_recherche,.choix_filtres a{
         font-size: 1rem;
+    }
+
+    /*---------------------------------------*/
+    /*==       EN TETE (HEADER)              */
+    /*---------------------------------------*/
+    #en_tete{
+        height: 80px;
+        margin-left: 50px;
+        margin-right: 65px;
+    }
+    
+    .logo {
+        flex-basis: 15%;
+        padding-top: 15px;
+        padding-left: 10px;
+    }
+    #navigation{
+        flex-basis: 75%;
+    }
+    .liste_navigation {
+        justify-content: flex-end;
+    }
+    .liste_navigation li,.inscription{
+        padding-top: 35px;
+    }
+    .liste_navigation li {
+        border-bottom: 0;
+        width: 22%;
+    }
+    .bordure_trait_bleu{
+        border-top: 2px #0065FC solid;
+    }
+    
+    .inscription {
+        position: static;
+        flex-basis: 10%;
     }
     
     /*---------------------------------------*/
@@ -659,7 +697,8 @@ figcaption {
         height: 190px;
     }
     .chambres p,.chambres .etoiles,.informations_chambres_populaires p
-    ,.informations_chambres_populaires .etoiles{
+    ,.informations_chambres_populaires .etoiles,.chambres h3,
+    .informations_chambres_populaires h3,.bloc_activites figcaption{
         font-size: 0.9rem;
     }
 
