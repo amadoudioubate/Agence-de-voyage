@@ -584,11 +584,11 @@ figcaption {
 @media screen and (min-width:1200px){
     body{
         background-color:#fff;
+        max-width: 1400px;
     }
     main{
         width: 90%;
         margin: 0 auto;
-        max-width: 1400px;
     }
     /*-------------------------------------------------------------------------*/
     /*==   La factorisation du code css concernant l'ensemble des sections     */
