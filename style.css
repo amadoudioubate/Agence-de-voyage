@@ -419,7 +419,6 @@ figcaption {
     main{
         width: 90%;
         margin: 0 auto;
-        /*max-width: 1459px;*/
     }
     /*-------------------------------------------------------------------------*/
     /*==   La factorisation du code css concernant l'ensemble des sections     */
@@ -439,9 +438,6 @@ figcaption {
         font-size: 1rem;
     }
     
-    .chambres h3,.informations_chambres_populaires h3,.bloc_activites figcaption{
-        font-size: 0.8rem;
-    }
     /*---------------------------------------*/
     /*==       EN TETE (HEADER)              */
     /*---------------------------------------*/
@@ -530,6 +526,7 @@ figcaption {
         background-color: #fff;
         height: 180px;
     }
+    .chambres h3,.informations_chambres_populaires h3,.bloc_activites figcaption,
     .chambres p,.chambres .etoiles,.informations_chambres_populaires p
     ,.informations_chambres_populaires .etoiles{
         font-size: 0.7rem;
