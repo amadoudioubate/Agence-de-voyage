@@ -259,7 +259,7 @@ a {
     font-size: 1.9rem;
 }
 .chambres,.chambres_populaires{
-    padding: 10px;
+    padding: 5px;
 }
 .chambres_populaires {
     height: 230px;
@@ -278,11 +278,11 @@ a {
     font-size: 1rem;
 }
 .informations_chambres_populaires .etoiles {
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 .images_chambres_populaires img {
-    height: 210px;
+    height: 220px;
     width: 180px;
     border-radius: 15px 0 0 15px;
 }
@@ -435,9 +435,12 @@ figcaption {
     .affiche_plus_de_chambres,.titre_filtre,.champ_texte{
         font-size: 1.3rem;
     }
-    #en_tete,.bouton_recherche,.choix_filtres a,.chambres h3,
-    .informations_chambres_populaires h3,.bloc_activites figcaption{
+    #en_tete,.bouton_recherche,.choix_filtres a {
         font-size: 1rem;
+    }
+    
+    .chambres h3,.informations_chambres_populaires h3,.bloc_activites figcaption{
+        font-size: 0.8rem;
     }
     /*---------------------------------------*/
     /*==       EN TETE (HEADER)              */
@@ -523,33 +526,33 @@ figcaption {
         flex-wrap: wrap;
     }
     .chambres {
-        flex-basis: 32.5%;
+        flex-basis: 32%;
         background-color: #fff;
-        height: 230px;
+        height: 180px;
     }
     .chambres p,.chambres .etoiles,.informations_chambres_populaires p
     ,.informations_chambres_populaires .etoiles{
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 
     .chambres_populaires {
-        width: 340px;
-        height: 180px;
+        width: 280px;
+        height: 140px;
     }
     .images_chambres_populaires img {
-        height: 160px;
-        width: 140px;
+        height: 130px;
+        width: 120px;
     }
     .informations_chambres_populaires {
-        height: 150px;
+        height: 130px;
     }
-
     .images_chambres img {
         height: 100px;
     }
     .chambres h3, .chambres p {
         margin-top: 5px;
     }
+    
     /*-----------------------------------------------*/
     /*==               SECTION ACTIVITES             */
     /*-----------------------------------------------*/
@@ -580,11 +583,12 @@ figcaption {
 
 @media screen and (min-width:1200px){
     body{
-        background-color: aqua;
+        background-color:#fff;
     }
     main{
         width: 90%;
         margin: 0 auto;
+        max-width: 1400px;
     }
     /*-------------------------------------------------------------------------*/
     /*==   La factorisation du code css concernant l'ensemble des sections     */
@@ -653,9 +657,9 @@ figcaption {
         flex-wrap: wrap;
     }
     .chambres {
-        flex-basis: 32.5%;
+        flex-basis: 32%;
         background-color: #fff;
-        height: 230px;
+        height: 190px;
     }
     .chambres p,.chambres .etoiles,.informations_chambres_populaires p
     ,.informations_chambres_populaires .etoiles{
@@ -664,7 +668,7 @@ figcaption {
 
     .chambres_populaires {
         width: 340px;
-        height: 180px;
+        height: 170px;
     }
     .images_chambres_populaires img {
         height: 160px;
