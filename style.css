@@ -583,17 +583,18 @@ figcaption {
 /*-------------------------------------------------------------*/
 @media screen and (min-width:1200px){
     body{
-        background-color:#fff;
-        max-width: 1400px;
+        background-color:#fff;    
     }
-    main{
-        width: 90%;
-        margin: 0 auto;
-    }
+    
     /*-------------------------------------------------------------------------*/
     /*==   La factorisation du code css concernant l'ensemble des sections     */
     /*                          la partie desktop                              */
     /*-------------------------------------------------------------------------*/
+    #en_tete,main,#pied_de_page{
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1400px;
+    }
     #en_tete,.filtres,.contenu_toutes_les_chambres,.bloc_activites,#pied_de_page{
         display: flex;
     }
@@ -613,14 +614,11 @@ figcaption {
     /*---------------------------------------*/
     #en_tete{
         height: 80px;
-        margin-left: 50px;
-        margin-right: 65px;
     }
     
     .logo {
         flex-basis: 15%;
         padding-top: 15px;
-        padding-left: 10px;
     }
     #navigation{
         flex-basis: 75%;
