@@ -219,7 +219,7 @@ a {
 .choix_filtres {
     margin-bottom: 25px;
     border-radius: 25px;
-    margin-right: 14px;
+    margin-right: 10px;
 }
 .icone_awesome {
     left: -2px;
@@ -482,7 +482,7 @@ figcaption {
         flex-wrap: nowrap;
     }
     .titre_filtre {
-        margin-right: 14px;
+        margin-right: 12px;
     }
     .titre_filtre{
         margin-top: 0;
@@ -567,6 +567,7 @@ figcaption {
     /*==   La factorisation du code css concernant l'ensemble des sections     */
     /*                          la partie desktop                              */
     /*-------------------------------------------------------------------------*/
+    /* Pour centrer sur la page */
     #en_tete,main,#pied_de_page{
         width: 90%;
         margin: 0 auto;
@@ -644,7 +645,7 @@ figcaption {
         flex-wrap: nowrap;
     }
     .titre_filtre {
-        margin-right: 14px;
+        margin-right: 12px;
     }
     .titre_filtre{
         margin-top: 0;
