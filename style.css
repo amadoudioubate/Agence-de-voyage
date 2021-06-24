@@ -42,7 +42,6 @@ body {
     font-size: 1.2rem;
     font-weight: 400;
     font-family: 'Raleway',sans-serif;
-    /*min-width: 320px;*/
     letter-spacing: .03rem;
 }
 figure,img{
@@ -103,9 +102,6 @@ a {
 .icone_information,a{
     color:#000;
 }
-.titre_populaire,.menu_filtrage {
-    justify-content: space-between;
-}
 #activites h2,.informations_chambres_populaires h3{
     margin-top: 0;
 }
@@ -135,7 +131,6 @@ a {
 .chambres h3,.informations_chambres_populaires h3,figcaption {
     font-size: 1.2rem;
 }
-
 /*---------------------------------------*/
 /*==       EN TETE (HEADER)              */
 /*---------------------------------------*/
@@ -151,7 +146,6 @@ a {
 #navigation {
     width: 100%;
 }
-
 .liste_navigation,.liste_navigation li{
     height: 80px;
 }
@@ -173,7 +167,6 @@ a {
     right: 5px;
     width: 25%;
 }
-
 /*---------------------------------------*/
 /*== SECTION TROUVER VOTRE HEBERGEMENT   */
 /*---------------------------------------*/
@@ -210,7 +203,6 @@ a {
 }
 .icone_recherche {
     border-radius: 10px;
-    /*background-color: #0065FC;*/
     color: #fff;
 }
 .bouton_recherche {
@@ -225,8 +217,9 @@ a {
     flex-wrap: wrap;
 }
 .choix_filtres {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     border-radius: 25px;
+    margin-right: 14px;
 }
 .icone_awesome {
     left: -2px;
@@ -250,11 +243,13 @@ a {
 /*---------------------------------------*/
 /*==          SECTION HEBERGEMENTS       */
 /*---------------------------------------*/
-
 #hebergements {
     flex-direction: column-reverse;
 }
 /**** La partie section hebergements concernant les chambres populaires ****/
+.titre_populaire{
+    justify-content: space-between;
+}
 .icone_ligne_de_caractere {
     font-size: 1.9rem;
 }
@@ -280,13 +275,11 @@ a {
 .informations_chambres_populaires .etoiles {
     padding-top: 40px;
 }
-
 .images_chambres_populaires img {
     height: 220px;
     width: 180px;
     border-radius: 15px 0 0 15px;
 }
-
 /**** La partie section hebergements concernant toutes les chambres ****/
 .chambres {
     height: 270px;  
@@ -314,7 +307,6 @@ a {
 /*---------------------------------------*/
 /*==          SECTION ACTIVITES          */
 /*---------------------------------------*/
-
 figure {
     margin-bottom: 30px;
     height: 270px;
@@ -331,16 +323,13 @@ figcaption {
 /*---------------------------------------*/
 /*==     PIED DE PAGE(FOOTER)            */
 /*---------------------------------------*/
-
 .contenu_pied_de_page{
     margin-bottom: 40px;
 }
-
 /*-------------------------------------------------------------*/
 /*==                      STYLE TABLETTES                      */
 /*-------------------------------------------------------------*/
 @media screen and (min-width:768px) and (max-width:991px) {
-
     /*-------------------------------------------------------------------------*/
     /*==   La factorisation du code css concernant l'ensemble des sections     */
     /*                          la partie tablette                             */
@@ -352,7 +341,6 @@ figcaption {
     /*---------------------------------------*/
     /*==      EN TETE  (HEADER)              */
     /*---------------------------------------*/
-    
     #en_tete {
         height: 80px;
     }
@@ -383,11 +371,9 @@ figcaption {
         position: static;
         flex-basis: 15%;
     }
-
     /*---------------------------------------------------*/
     /*==          SECTION TROUVER HEBERGEMENT            */
     /*---------------------------------------------------*/
-
     .formulaire_recherche {
         width: 450px;
     }
@@ -410,12 +396,10 @@ figcaption {
         height: 490px;
     }    
 }
-
 /*-------------------------------------------------------------*/
 /*==                      STYLE DESKTOPS                       */
 /*-------------------------------------------------------------*/
 @media screen and (min-width:992px) and (max-width:1199px) {
-    
     main{
         width: 90%;
         margin: 0 auto;
@@ -424,7 +408,7 @@ figcaption {
     /*==   La factorisation du code css concernant l'ensemble des sections     */
     /*                          la partie desktop                              */
     /*-------------------------------------------------------------------------*/
-    #en_tete,.filtres,.contenu_toutes_les_chambres,.bloc_activites,#pied_de_page{
+    #en_tete,.filtres,.titre_filtre,.contenu_toutes_les_chambres,.bloc_activites,#pied_de_page{
         display: flex;
     }
     #en_tete,.contenu_toutes_les_chambres,.bloc_activites,#pied_de_page{
@@ -437,7 +421,6 @@ figcaption {
     #en_tete,.bouton_recherche,.choix_filtres a {
         font-size: 1rem;
     }
-    
     /*---------------------------------------*/
     /*==       EN TETE (HEADER)              */
     /*---------------------------------------*/
@@ -446,7 +429,6 @@ figcaption {
         margin-left: 50px;
         margin-right: 65px;
     }
-    
     .logo {
         flex-basis: 15%;
         padding-top: 15px;
@@ -468,7 +450,6 @@ figcaption {
     .bordure_trait_bleu{
         border-top: 2px #0065FC solid;
     }
-    
     .inscription {
         position: static;
         flex-basis: 10%;
@@ -493,17 +474,20 @@ figcaption {
         color: #fff;
         border: 0;
     }
-    
+    .filtres,.menu_filtrage,.titre_filtre {
+        align-items: center;
+    }
     .menu_filtrage {
-        width: 100%;
         padding-top: 20px;
-        margin-top: 20px;
+        flex-wrap: nowrap;
     }
     .titre_filtre {
-        margin-right: 25px;
-        margin-top: 50px;
+        margin-right: 14px;
     }
-
+    .titre_filtre{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
     /*---------------------------------------------------*/
     /*==             SECTION HEBERGEMENTS                */
     /*---------------------------------------------------*/
@@ -517,7 +501,6 @@ figcaption {
         margin-right: 20px;
         background-color: #F2F2F2;
     }
-
     .contenu_toutes_les_chambres {
         flex-wrap: wrap;
     }
@@ -531,7 +514,6 @@ figcaption {
     ,.informations_chambres_populaires .etoiles{
         font-size: 0.7rem;
     }
-
     .chambres_populaires {
         width: 280px;
         height: 140px;
@@ -549,11 +531,9 @@ figcaption {
     .chambres h3, .chambres p {
         margin-top: 5px;
     }
-    
     /*-----------------------------------------------*/
     /*==               SECTION ACTIVITES             */
     /*-----------------------------------------------*/
-    
     .figure_longue,.images_activites{
         flex-basis: 24%;
     }
@@ -569,7 +549,6 @@ figcaption {
     .figure_courte img{
         height: 140px;
     }
-    
     /*---------------------------------------*/
     /*==      PIED DE PAGE (FOOTER)          */
     /*---------------------------------------*/   
@@ -577,15 +556,13 @@ figcaption {
         padding: 0 80px;
     }
 }
-
 /*-------------------------------------------------------------*/
 /*==                      STYLE DESKTOPS AU DELA DE 1200       */
 /*-------------------------------------------------------------*/
 @media screen and (min-width:1200px){
     body{
         background-color:#fff;    
-    }
-    
+    } 
     /*-------------------------------------------------------------------------*/
     /*==   La factorisation du code css concernant l'ensemble des sections     */
     /*                          la partie desktop                              */
@@ -595,7 +572,7 @@ figcaption {
         margin: 0 auto;
         max-width: 1400px;
     }
-    #en_tete,.filtres,.contenu_toutes_les_chambres,.bloc_activites,#pied_de_page{
+    #en_tete,.filtres,.titre_filtre,.contenu_toutes_les_chambres,.bloc_activites,#pied_de_page{
         display: flex;
     }
     #en_tete,.contenu_toutes_les_chambres,.bloc_activites,#pied_de_page{
@@ -608,14 +585,12 @@ figcaption {
     .bouton_recherche,.choix_filtres a{
         font-size: 1rem;
     }
-
     /*---------------------------------------*/
     /*==       EN TETE (HEADER)              */
     /*---------------------------------------*/
     #en_tete{
         height: 80px;
     }
-    
     .logo {
         flex-basis: 15%;
         padding-top: 15px;
@@ -641,7 +616,6 @@ figcaption {
         position: static;
         flex-basis: 10%;
     }
-    
     /*---------------------------------------*/
     /*== SECTION TROUVER VOTRE HEBERGEMENT   */
     /*---------------------------------------*/
@@ -662,15 +636,19 @@ figcaption {
         color: #fff;
         border: 0;
     }
-    
+    .filtres,.menu_filtrage,.titre_filtre {
+        align-items: center;
+    }
     .menu_filtrage {
-        width: 100%;
         padding-top: 20px;
-        margin-top: 20px;
+        flex-wrap: nowrap;
     }
     .titre_filtre {
-        margin-right: 25px;
-        margin-top: 50px;
+        margin-right: 14px;
+    }
+    .titre_filtre{
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     /*---------------------------------------------------*/
@@ -699,7 +677,6 @@ figcaption {
     .informations_chambres_populaires h3,.bloc_activites figcaption{
         font-size: 0.9rem;
     }
-
     .chambres_populaires {
         width: 340px;
         height: 170px;
@@ -711,7 +688,6 @@ figcaption {
     .informations_chambres_populaires {
         height: 150px;
     }
-
     .images_chambres img {
         height: 100px;
     }
@@ -721,7 +697,6 @@ figcaption {
     /*-----------------------------------------------*/
     /*==               SECTION ACTIVITES             */
     /*-----------------------------------------------*/
-    
     .figure_longue,.images_activites{
         flex-basis: 24%;
     }
@@ -737,7 +712,6 @@ figcaption {
     .figure_courte img{
         height: 140px;
     }
-    
     /*---------------------------------------*/
     /*==      PIED DE PAGE (FOOTER)          */
     /*---------------------------------------*/   
