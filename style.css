@@ -258,6 +258,7 @@ a {
 }
 .chambres_populaires {
     height: 230px;
+    cursor: pointer;
 }
 .informations_chambres_populaires {
     height: 185px;
@@ -391,6 +392,7 @@ figcaption {
     }
     .figure_longue {
         height: 570px;
+        cursor: pointer;
     }
     .figure_longue img{
         height: 490px;
@@ -545,6 +547,7 @@ figcaption {
     }
     .figure_courte {
         height: 220px;
+        cursor: pointer;
     }
     .figure_courte img{
         height: 140px;
