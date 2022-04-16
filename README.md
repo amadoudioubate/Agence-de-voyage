@@ -6,7 +6,7 @@ Développez en Mobile first
 
 - Les hébergements peuvent également être filtrés par thématique, par exemple leur budget ou leur ambiance.
 
-# Compétences évaluées
+## Compétences évaluées
 
 - Implémenter une interface responsive
 
