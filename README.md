@@ -6,4 +6,10 @@ Développez en Mobile first
 
 - Les hébergements peuvent également être filtrés par thématique, par exemple leur budget ou leur ambiance.
 
-Lien du site : https://amadoudioubate.github.io/AmadouDioubate_2_05052021/
+# Compétences évaluées
+
+- Implémenter une interface responsive
+
+- Intégrer du contenu conformément à une maquette
+
+Lien site web : https://amadoudioubate.github.io/AmadouDioubate_2_05052021/
