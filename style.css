@@ -158,14 +158,22 @@ a {
 }
 .bordure_trait_bleu{
     border-bottom: 4px #0065FC solid;
+    transition: all 0.2s ease-in-out;
 }
 .bordure_trait_gris{
     border-bottom: 4px #F2F2F2 solid;
+    transition: all 0.2s ease-in-out;
 }
 .inscription {
     top: 20px;
     right: 5px;
     width: 25%;
+}
+
+.liste_navigation li a:hover {
+    border-bottom: 2px solid blue;
+    border-radius: 2px;
+    padding-bottom: 2px;
 }
 /*---------------------------------------*/
 /*== SECTION TROUVER VOTRE HEBERGEMENT   */
